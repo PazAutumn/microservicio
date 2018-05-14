@@ -42,11 +42,11 @@ exports.test1 = function (req, res) {
     var k5 = req.body.key5;
 
     var obj = {
-        "nombre": "Morgan",
-        "color": "crema",
-        "edad": "5",
-        "tamaño": "mediano",
-        "tipoPelo": "corto"
+        "name": "Harrison",
+        "color": "White",
+        "age": "4 months",
+        "size": "Small",
+        "type": "Albino"
     }
 
     obj['keySalida'] = k1;
@@ -55,6 +55,6 @@ exports.test1 = function (req, res) {
     obj['keySalida'] = k4;
     obj['keySalida'] = k5;
     //res: respuesta
-    console.log(js2xmlparser.parse("person", obj));
-    res.status(200).send(js2xmlparser.parse("person", obj));
+    console.log(js2xmlparser.parse("cat", obj));
+    res.status(200).send(js2xmlparser.parse("cat", obj));
 }
