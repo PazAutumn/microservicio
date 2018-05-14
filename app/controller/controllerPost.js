@@ -55,5 +55,6 @@ exports.test1 = function (req, res) {
     obj['keySalida'] = k4;
     obj['keySalida'] = k5;
     //res: respuesta
-    res.status(200).send(js2xmlparser.parse("name", obj));
+    console.log(js2xmlparser.parse("person", obj));
+    res.status(200).send(js2xmlparser.parse("person", obj));
 }
