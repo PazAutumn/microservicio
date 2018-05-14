@@ -1,4 +1,5 @@
 var JSONValidation = require('json-validation').JSONValidation;
+var js2xmlparser = require("js2xmlparser");
 
 exports.test1 = function (req, res) {
     console.log(req.body);
@@ -54,5 +55,5 @@ exports.test1 = function (req, res) {
     obj['keySalida'] = k4;
     obj['keySalida'] = k5;
     //res: respuesta
-    res.status(200).send(obj);
+    res.status(200).send(js2xmlparser.parse("name", obj));
 }
